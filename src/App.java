@@ -71,6 +71,7 @@ class App {
         while(!controle){
 	    System.out.print("Informe a quantidade de vértices(1-9): ");
 	    numVertices = sc.nextInt();
+        System.out.println("Vértices de 0 a "+(numVertices-1));
          if (numVertices>10 || numVertices<1){
              System.out.println("Valor incorreto");
              
@@ -80,7 +81,7 @@ class App {
 	    sc.nextLine();
 	    
 	    System.out.print("Em quais vértices deseja aresta?(escreva dois numeros representando os dois vertices conectados, se for mais de uma aresta de um espaço entre os pares de números) ");
-	    verticesDesejados = sc.nextLine();
+	    verticesDesejados = sc.nextLine()+" ";
 	    
     } else if (tipoAleatoriedade==0){
         numVertices = gerador.nextInt(9) + 1;
@@ -144,7 +145,7 @@ class App {
 	    try {
 	      if (caracteristicasCorretas) {
 	        String auxSplit[] = verticesDesejados.split(" ");
-	        System.out.println("valor de tipo grafo"+tipoGrafo);
+	        
 
 	        for (int i = 0; i < auxSplit.length; i++) {
 
