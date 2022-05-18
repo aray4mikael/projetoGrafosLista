@@ -159,13 +159,23 @@ class App {
 	            insereArestaNaoPonderadoNaoDirecionado(Grafo, origem, destino);
 	          }
 	          else if (tipoGrafo == 3) {
-	            System.out.printf("\nInforme o peso na aresta: [%d->%d]: ", origem, destino);
-	            int peso = sc.nextInt();
+                int peso = 0;
+                if (tipoAleatoriedade==1){
+                System.out.printf("\nInforme o peso na aresta: [%d->%d]:\n ", origem, destino);
+                peso = sc.nextInt();
+                } else if (tipoAleatoriedade==0){
+                    peso = gerador.nextInt(99)+10;
+                }
 	            insereArestaPonderadoDirecionado(Grafo, origem, destino, peso);
 	          } 
 	          else if (tipoGrafo == 4) {
 	            System.out.printf("\nInforme o peso na aresta: [%d-%d]: ", origem, destino);
-	            int peso = sc.nextInt();
+	            int peso = 0;
+	            if (tipoAleatoriedade==1){
+                peso = sc.nextInt();
+                } else if (tipoAleatoriedade==0){
+                    peso = gerador.nextInt(99)+10;
+                }
 		          insereArestaPonderadoNaoDirecionado(Grafo, origem, destino, peso);
 	          }
 	          
