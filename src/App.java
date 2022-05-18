@@ -4,6 +4,19 @@
 * MATEUS RAMALHO
 * MIKAEL ARAYA
 * VICTOR SOUZA
+*
+* Justificativa:
+* Para representar os grafos, usamos a linguagem de programação 
+* java por ser de  conhecimento de todos os integrantes do grupo. 
+* Ao Iniciar o simulador o usuário informa qual grafo deseja, a 
+* quantidade de vértices em quais vértices deseja aresta, após isso, 
+* é feito a manipulação de strings para abstrair as arestas, tendo 
+* as arestas é realizado um loop em cada aresta e inserindo no grafo.
+*
+* Ao final é gerado uma matriz de adjacencia.
+*
+* Justifica-se o a implementacao dessa forma pois a matriz de adjacencia
+* é um modelo de representacao de um grafo.
 */
 
 
