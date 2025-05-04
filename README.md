@@ -1,18 +1,45 @@
-## Getting Started
+# Projeto de Grafos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um projeto desenvolvido para a disciplina de Algoritmos em Grafos. O programa implementa diferentes tipos de grafos e suas representações através de matriz de adjacência.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- Criação de diferentes tipos de grafos:
+  - Grafo direcionado não-ponderado
+  - Grafo não-direcionado não-ponderado
+  - Grafo direcionado ponderado
+  - Grafo não-direcionado ponderado
+- Opção de criar grafos manualmente ou aleatoriamente
+- Representação do grafo através de matriz de adjacência
+- Suporte para até 9 vértices
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Executar
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Compile o arquivo `App.java`:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```bash
+javac src/App.java
+```
 
-## Dependency Management
+2. Execute o programa:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+java -cp src App
+```
+
+3. Siga as instruções no terminal para:
+   - Escolher o tipo de grafo
+   - Definir se deseja criar manualmente ou aleatoriamente
+   - Inserir os vértices e arestas (se escolher a opção manual)
+
+## Desenvolvedores
+
+- Mateus Ramalho
+- Mikael Araya
+- Victor Souza
+
+## Tecnologias Utilizadas
+
+- Java
+- Scanner para entrada de dados
+- Random para geração de grafos aleatórios
